@@ -22,12 +22,12 @@ void printMenuAdministrador(){
    cout << "   4. Buscar persona\n";
    cout << "   5. Ver personas\n";
    cout << "   6. Crear reserva\n";
-   cout << "   6. Eliminar reserva\n";
-   cout << "   7. Editar reserva\n";
-   cout << "   8. Buscar reserva\n";
-   cout << "   9. Ver reservas";
-   cout << "   9. Ver reservas";
-   cout << "   10. Ver personas\n";
+   cout << "   7. Eliminar reserva\n";
+   cout << "   8. Editar reserva\n";
+   cout << "   9. Buscar reserva\n";
+   cout << "   10. Buscar evaluaciones";
+   cout << "   11. Ver evaluaciones";
+   cout << "   12. Ver personas\n";
    cout << "   0. Regresar\n";
    cout << "Opción: ";
 }
@@ -38,18 +38,15 @@ void printMenuUsuario(){
    cout << "   2. Iniciar como huesped\n";
    cout << "   0. Regresar\n";
    cout << "Opción: ";
-   
 }
 
-void menu( Sistema * sistema ){
-   int opt1, opt2;
+void menuAdministrador(){
+   int opt;
    do{
-      printMenu();
-      do
-      cin >> opt1;
-      switch( opt1 ){
+      printMenuAdministrador();
+      cin >> opt;
+      switch( opt ):
          case 0:
-            cout << "Gracias por utilizar nuestro aplicativo, vuelva pronto\n";
             break;
          case 1:
             sistema.agregarPersona();
@@ -61,19 +58,70 @@ void menu( Sistema * sistema ){
             sistema.editarPersona();
             break;
          case 4:
-            sistema.buscarPersona(); 
+            sistema.buscarPersona();
             break;
-         case 5:
+         case 5;
             sistema.verPersonas();
+            break;
+         case 6:
+            break;
+         case 7:
+            break;
+         case 8:
+            break;
+         case 9:
+            break;
+         case 10;
+            default:
+         case 11:
+            break;
+         case 12:
             break;
          default:
             cout << "Por favor, seleccione una opción válida\n";
+   } while( opt );
+}
+
+void menuUsuario(){
+   int opt;
+   do{
+      printMenuUsuario();
+      cin >> opt;
+      switch( opt ):
+         case 0:
             break;
+         case 1:
+            sistema.Login();
+            break;
+         default:
+            cout << "Por favor, seleccione una opción válida\n";
+   } while( opt );
+}
+
+void menu( Sistema * sistema ){
+   int opt;
+   do{
+      printMenuGeneral();
+      cin >> opt1;
+      switch( opt1 ){
+         case 0:
+            cout << "Gracias por utilizar nuestro aplicativo, vuelva pronto\n";
+            break;
+         case 1:
+            menuAdministrador();
+            system( "pause\ncls" );
+            break;
+         case 2:
+            menuUsuario();
+            system( "pause\ncls" );
+            break;
+         default:
+            cout << "Por favor, seleccione una opción válida\n";
       }
-   }
+   } while( opt2 ); 
 }
 
 int main(){
-
+   menu( &sistema );
    return 0;
 }
