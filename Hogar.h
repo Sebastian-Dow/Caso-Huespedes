@@ -25,13 +25,13 @@ public:
     ~Hogar();
 
     const string &getDireccion() const;
-    bool &getBebes() const;
     int &getCamas() const;
+    bool &getBebes() const;
     const string &getdescripcion() const;
 
     void setDireccion(const string direccion);
-    void setBebes(bool bebe);
     void setCamas(int camas);
+    void setBebes(bool bebe);
     void setDescripcion(const string descripcion);
 
 };
