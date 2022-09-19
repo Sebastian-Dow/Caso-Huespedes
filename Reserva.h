@@ -22,6 +22,9 @@ private:
 
 public:
     Reserva();
+    Reserva(string fechaInicial);
+    Reserva(string fechaInicial, string fechaFinal);
+
     ~Reserva();
 
     const string &getFechaInicial() const;
