@@ -19,10 +19,9 @@ class Persona{
       string nombre;
       string sexo;
       int puntaje;
-
     public:
       Persona();
-      ~Persona();
+      virtual ~Persona();
 
       long &getIdPersona() const;
       const string &getNombre() const;
@@ -33,8 +32,6 @@ class Persona{
       void setNombre(const string nombre);
       void setSexo(const string sexo);
       void setPuntaje(int puntaje);
-
-
 };
 
 #endif
