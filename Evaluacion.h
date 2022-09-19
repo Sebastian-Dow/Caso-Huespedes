@@ -5,8 +5,6 @@
 #include <vector>
 
 #include "propietario.h"
-#include "huesped.h"
-#include "reserva.h"
 
 using std::cin;
 using std::cout;
@@ -19,7 +17,6 @@ private:
     double calificacion;
     string comentario;
     Propietario *propietario;
-
 public:
     Evaluacion();
     ~Evaluacion();
@@ -33,7 +30,6 @@ public:
     void setComentario(const string comentario);
     void setCalificacion(double calificacion);
     void setPropietario(Propietario *propietario);
-
 };
 
 #endif
