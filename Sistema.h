@@ -15,11 +15,27 @@ using std::vector;
 
 class Sistema{
    private:
-      vector<Persona *> personas;
+      unordered_map<int, Persona*> usuarios;
+      unordered_map<int, Reserva*> reservas;
+      unordered_map<int, Evaluacion*> evaluaciones;
       void inicializarDatos();
+
    public:
       Sistema();
-      ~Sistema();
+      ~Sistema(); //destructor
+
+      void agregarPersona();
+      void eliminarPersona();
+      void editarPersona();
+      void verpersonas();
+      void crearReserva();
+      void editarReserva();
+      void buscarReserva();
+      void eiminarReservas();
+      void agregarEvaluaciones();
+      void buscarEvaluaciones();
+      void verEvaluaciones();
+      void login();
 };
 
 #endif
