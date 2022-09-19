@@ -14,12 +14,12 @@ using std::string;
 using std::vector;
 
 class Persona{
-    private:
+   private:
       long idPersona;
       string nombre;
       string sexo;
       int puntaje;
-    public:
+   public:
       Persona();
       virtual ~Persona();
 
