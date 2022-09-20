@@ -13,7 +13,7 @@ Huesped::Huesped(string infoHospital) : infoHospital(infoHospital){
 Huesped::Huesped(string infoHospital, string ciudad) : infoHospital(infoHospital), ciudad(ciudad){
 }
 
-void Huesped::mostrarDatos() {
+virtual void Huesped::mostrarDatos() {
     cout << "Informacion hospital: " << infoHospital << "\n";
     cout << "La ciudad es: " << ciudad << "\n";
     cout << "\n";
