@@ -29,7 +29,7 @@ void Hogar::mostrarDatos() {
     cout << "\n";
 }
 
-const string &Hogar::getDireccion() const {
+string Hogar::getDireccion() const {
     return direccion;
 }
 
@@ -53,10 +53,10 @@ void Hogar::setCamas(int camas) {
     Hogar::camas = camas;
 }
 
-const string &Hogar::getDescripcion() const{
+string Hogar::getDescripcion() const{
   return descripcion;
 }
 
-void Hogar::setDescripcion(int descipcion) {
-    Hogar::descipcion = descipcion;
+void Hogar::setDescripcion(int descripcion) {
+    Hogar::descripcion = descripcion;
 }

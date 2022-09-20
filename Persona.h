@@ -32,6 +32,8 @@ class Persona{
       void setNombre(const string nombre);
       void setSexo(const string sexo);
       void setPuntaje(int puntaje);
+
+      void mostrarDatos();
 };
 
 #endif

@@ -34,8 +34,10 @@ public:
 
     void setFechaInicial(const string fechaInicial);
     void setFechaFinal(const string fechaFinal);
-    void setPropietario(Propietario *propietario);
-    void setHuesped(Huesped *huesped);
+    void setPropietario(Propietario *propietario1);
+    void setHuesped(Huesped *huesped1);
+
+    void mostrarDatos();
 
 };
 

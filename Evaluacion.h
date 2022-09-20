@@ -18,8 +18,9 @@ private:
     string comentario;
     Propietario *propietario;
 public:
-    Evaluacion();
-    ~Evaluacion();
+    Evaluacion();//constructor
+
+    ~Evaluacion();//destructor
 
     const string &getFecha() const;
     const string &getComentario() const;
@@ -29,7 +30,9 @@ public:
     void setFecha(const string fecha);
     void setComentario(const string comentario);
     void setCalificacion(double calificacion);
-    void setPropietario(Propietario *propietario);
+    void setPropietario(Propietario *propietario1);
+
+    void mostrarDatos();
 };
 
 #endif
