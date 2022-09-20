@@ -14,7 +14,7 @@ void Sistema::editarPersona() {
 
 }
 
-void Sistema::verpersonas() {
+void Sistema::verPersona() {
 
 }
 
@@ -30,19 +30,19 @@ void Sistema::editarReserva() {
 
 }
 
-void Sistema::eiminarReservas() {
+void Sistema::eiminarReserva() {
 
 }
 
-void Sistema::agregarEvaluaciones() {
+void Sistema::agregarEvaluacion() {
 
 }
 
-void Sistema::buscarEvaluaciones() {
+void Sistema::buscarEvaluacion() {
 
 }
 
-void Sistema::verEvaluaciones() {
+void Sistema::verEvaluacion() {
 
 }
 
