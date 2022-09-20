@@ -33,7 +33,7 @@ class Persona{
       void setSexo(const string sexo);
       void setPuntaje(int puntaje);
 
-      void mostrarDatos();
+      virtual void mostrarDatos();
 };
 
 #endif
