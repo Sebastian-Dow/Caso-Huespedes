@@ -17,15 +17,15 @@ private:
     Hogar *hogar;
 public:
     Propietario();//constructor
-
-    ~Propietario();//destructor
+    virtual ~Propietario();//destructor
 
     bool &getHuespedes() const;
     Hogar *getHogar() const;
 
     void setHuespedes(bool huespedes);
     void setHogar(Hogar *hogar1);
-    void mostrarDatos();
+    
+    virtual void mostrarDatos();
 };
 
 #endif
