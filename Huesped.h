@@ -13,15 +13,13 @@ using std::cout;
 using std::string;
 using std::vector;
 
-class Huesped{
+class Huesped: public Persona{
 private:
     string infoHospital;
     string ciudad;
-
 public:
     Huesped();
-
-    ~Hogar();
+    ~Huesped();
 
     const string &getInfoHospital() const;
     const string &getCiudad() const;
